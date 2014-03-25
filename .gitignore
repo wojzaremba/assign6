@@ -1,0 +1,4 @@
+*.class
+model
+*features
+.DS_Store
