@@ -197,7 +197,7 @@ public class Classifier {
 	}
 	
 	public static void main(String[] args) {
-		FeatureExtractor[] extractors = {new SimpleFeatureExtractor(), new PrevFeatureExtractor(), new NextPrevFeatureExtractor()}; 
+		FeatureExtractor[] extractors = {new SimpleFeatureExtractor(), new PrevFeatureExtractor(), new NextPrevFeatureExtractor(), new WordNextPrevFeatureExtractor()}; 
 		for (int e = 0; e < extractors.length; ++e) {
 			Classifier c = new Classifier(extractors[e]);
 			String training = "data/training";
